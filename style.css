@@ -1,0 +1,461 @@
+/* line 1, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #477dca;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  /* line 22, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_buttons.scss */
+  button:hover,
+  button:focus, input[type="button"]:hover,
+  input[type="button"]:focus, input[type="reset"]:hover,
+  input[type="reset"]:focus, input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background-color: #3964a2;
+    color: #fff; }
+  /* line 27, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_buttons.scss */
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    /* line 31, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_buttons.scss */
+    button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+      background-color: #477dca; }
+
+/* line 1, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+
+/* line 10, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+/* line 16, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  /* line 20, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+  label.required::after {
+    content: "*"; }
+  /* line 24, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 27, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%; }
+  /* line 42, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border-color: #b1b1b1; }
+  /* line 46, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+  /* line 52, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+  input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+  select[multiple=multiple]:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed; }
+    /* line 56, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+    input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+    select[multiple=multiple]:disabled:hover {
+      border: 1px solid #ddd; }
+
+/* line 62, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 66, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+input[type="search"] {
+  appearance: none; }
+
+/* line 71, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+  /* line 75, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-block; }
+
+/* line 80, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+/* line 85, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 2, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 20, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  font-feature-settings: "kern", "liga", "tnum";
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 9, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 16, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
+
+/* line 23, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 14, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2; }
+
+/* line 20, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 24, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+a {
+  color: #477dca;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  /* line 31, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+  a:active,
+  a:focus,
+  a:hover {
+    color: #355e98; }
+
+/* line 36, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+/* line 45, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 3, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+h1, h2, h3, span, strong, .button {
+  font-family: 'Homenaje', sans-serif;
+  text-transform: uppercase; }
+
+/* line 7, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+p, li {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  letter-spacing: -0.04em;
+  color: #005D5D; }
+
+/* line 14, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+h1 {
+  font-size: 3.7em;
+  line-height: 1.6em;
+  margin: -15px 0 0;
+  letter-spacing: -0.03em;
+  color: #FD0000; }
+
+/* line 22, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+h2 {
+  font-size: 2.4em;
+  line-height: 2.1em;
+  font-weight: 600;
+  color: #609100; }
+
+/* line 28, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+h2 ~ h2 {
+  margin-top: 20px; }
+
+/* line 31, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+h3 {
+  font-size: 1.75em;
+  line-height: 1.8em;
+  letter-spacing: -0.03em; }
+
+/* line 36, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+.h4 {
+  font-size: 1.5em; }
+
+/* line 39, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+strong {
+  font-size: 1.1em;
+  font-weight: 700; }
+
+/* line 43, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+ol {
+  list-style: decimal;
+  margin-left: 30px; }
+
+/* line 47, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+ul {
+  list-style: disc;
+  margin-left: 30px; }
+
+/* line 51, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+.box1 {
+  background-color: #FF6363; }
+
+/* line 54, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+.box2 {
+  background-color: #46B3B3; }
+
+/* line 57, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+.box3 {
+  background-color: #FFAA63; }
+
+/* line 60, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+.button {
+  margin: 20px auto 0;
+  background-color: #609100;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white; }
+  /* line 66, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+  .button:hover {
+    background-color: #FD0000;
+    color: white; }
+
+/* line 70, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  /* line 76, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+  body .presentation {
+    width: 960px;
+    min-height: 600px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; }
+    /* line 85, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+    body .presentation header {
+      flex: 2; }
+      /* line 88, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation header a img {
+        max-width: 100px;
+        margin: 20px 0 0 20px; }
+      /* line 92, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation header a #header-logo {
+        margin: 30px 0 -20px 30px;
+        -webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+        -o-transform: rotate(-7deg);
+        transform: rotate(-7deg); }
+    /* line 97, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+    body .presentation .hr-top, body .presentation .hr-bottom {
+      width: 70%;
+      height: 5px;
+      color: #fff;
+      border-top: 2px solid #FD0000;
+      border-bottom: 6px solid #609100;
+      margin: 0 auto; }
+    /* line 106, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+    body .presentation .container {
+      display: flex;
+      justify-content: center;
+      flex: 10; }
+      /* line 111, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation .container .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        max-width: 800px; }
+        /* line 118, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+        body .presentation .container .content .wrap-media {
+          margin: 0 auto;
+          max-width: 600px; }
+          /* line 122, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+          body .presentation .container .content .wrap-media img {
+            max-width: 100%;
+            max-height: 335px;
+            margin: 0 auto; }
+          /* line 127, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+          body .presentation .container .content .wrap-media #company-logo {
+            max-width: 400px; }
+        /* line 131, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+        body .presentation .container .content .wrap-text .boxes {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 20px; }
+          /* line 136, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+          body .presentation .container .content .wrap-text .boxes .box {
+            max-width: 220px;
+            padding: 15px;
+            margin: 5px;
+            color: white; }
+            /* line 142, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+            body .presentation .container .content .wrap-text .boxes .box ul li {
+              font-size: 1.05em;
+              line-height: 1.3em;
+              color: white; }
+              /* line 146, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+              body .presentation .container .content .wrap-text .boxes .box ul li:nth-last-child(n+2) {
+                margin-bottom: 9px; }
+        /* line 150, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+        body .presentation .container .content .wrap-text #welcome-subheading {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          /* line 154, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+          body .presentation .container .content .wrap-text #welcome-subheading .accent {
+            width: 50px;
+            border-top: 3px solid #FD0000;
+            border-bottom: 3px solid #FD0000;
+            border-radius: 4px; }
+    /* line 160, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+    body .presentation .hr-bottom {
+      transform: rotate(180deg); }
+    /* line 163, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+    body .presentation footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex: 2; }
+      /* line 169, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation footer .play-button {
+        position: absolute;
+        left: 48%;
+        bottom: 3%;
+        color: #FD0000; }
+      /* line 175, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation footer .page-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        position: absolute;
+        left: 48%;
+        bottom: 2%;
+        width: 17px;
+        height: 17px;
+        border-left: 4px solid #609100;
+        border-bottom: 4px solid #609100;
+        border-right: 4px solid #FD0000;
+        border-top: 4px solid #FD0000;
+        color: #005D5D;
+        font-weight: 600;
+        transform: rotate(45deg); }
+        /* line 192, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+        body .presentation footer .page-number span {
+          transform: rotate(-45deg);
+          margin-top: 1px; }
+      /* line 196, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation footer .by-name {
+        display: block;
+        margin: 0 30px 30px 0;
+        -webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+        -o-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+        border-bottom: 3px dotted #FD0000;
+        border-top: 3px dotted #609100; }
+      /* line 203, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation footer .chevron-left {
+        position: absolute;
+        left: 20px;
+        top: 48%;
+        color: #609100; }
+      /* line 209, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+      body .presentation footer .chevron-right {
+        position: absolute;
+        right: 20px;
+        top: 48%;
+        color: #FD0000; }
+
+@media (max-width: 780px) {
+  /* line 216, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+  .boxes {
+    flex-direction: column; }
+    /* line 218, D:/Google Drive/school-code-institute/stream-1/UX/band-project/presentation/style.sass */
+    .boxes .box {
+      max-width: 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */
